@@ -49,6 +49,14 @@ Fill in metadata.rb as appropriate:
     depends          'apt'
     depends          'magic_shell'
 
+Testing with Vagrant
+====================
+
+If you have [vagrant](http://www.vagrantup.com/) and [virtualbox](https://www.virtualbox.org/)
+installed, you can test your chef scripts using the included Vagrantfile by doing a `vagrant up`.
+This will use the Berksfile to install any dependencies, and will load attributes and the
+run_list from chef/nodes/default.json.
+
 Deploying to a server
 =====================
 
